@@ -29,6 +29,8 @@ body {
 	grid-row: 1;
 	grid-column: span 12;
 	background-color:#999;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .linkBar {
@@ -37,17 +39,15 @@ body {
 	grid-gap: 5px;
 	grid-template-columns: repeat(6, 1fr);
 }
-	
-.content {
-	grid-row: 2;
-	grid-column: span 12;
-	background-color:#666;
-}
 
 .footer {
 	grid-row: 3;
 	grid-column: span 12;
 	background-color:#333;
+}
+
+#currentPage {
+	background-color: #494947;
 }
 
 @media screen and (max-width: 640px) {

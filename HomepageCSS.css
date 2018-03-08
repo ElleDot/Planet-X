@@ -21,7 +21,7 @@ body {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 50px 300px 300px;
+	grid-template-rows: 50px 1fr 1fr;
 	padding: 2%;
 }
 
@@ -29,6 +29,8 @@ body {
 	grid-row: 1;
 	grid-column: span 12;
 	background-color:#999;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .linkBar {
@@ -42,12 +44,22 @@ body {
 	grid-row: 2;
 	grid-column: span 12;
 	background-color:#666;
+	padding: 2%;
 }
 
 .footer {
 	grid-row: 3;
 	grid-column: span 12;
 	background-color:#333;
+}
+
+.linkBar > #currentPage {
+	background-color: #494947;
+	height: auto;
+}
+
+img {
+    max-width:100%;
 }
 
 @media screen and (max-width: 640px) {
@@ -66,7 +78,7 @@ body {
     }
 	
 	.wrapper {
-		grid-template-rows: 100px 200px 200px;
+		grid-template-rows: 100px 1fr 1fr;
 	}
 	
 }

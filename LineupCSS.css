@@ -11,6 +11,7 @@
 	font-family: "Audiowide", Helvetica, sans-serif;
 	color:#FFF;
 	text-align: center;
+	font-size: 45px;
 }
 
 body {
@@ -29,6 +30,8 @@ body {
 	grid-row: 1;
 	grid-column: span 12;
 	background-color:#999;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .linkBar {
@@ -41,9 +44,10 @@ body {
 
 .sideBySideContent {
 	display: grid;
-	grid-template-columns: repeat(3,1fr);
+	grid-template-columns: repeat(3, 1fr);
+	padding: 2%;
 }
-	
+
 .content {
 	grid-row: 2;
 	grid-column: span 12;
@@ -54,6 +58,10 @@ body {
 	grid-row: 3;
 	grid-column: span 12;
 	background-color:#333;
+}
+
+#currentPage {
+	background-color: #494947;
 }
 
 @media screen and (max-width: 720px) {
@@ -77,7 +85,11 @@ body {
     }
 	
 	.wrapper {
-		grid-template-rows: 100px 200px 200px;
+		grid-template-rows: 100px 1fr 1fr;
+	}
+	
+	iframe {
+		width: 1fr;
 	}
 	
 }
