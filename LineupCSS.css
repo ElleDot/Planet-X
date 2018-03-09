@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
-.linkBar > div > a , p {
+.linkBar > div > a {
 	color:#EFEEFF;
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	text-align: center;
@@ -12,10 +12,22 @@
 	padding-bottom: 10px;
 }
 
-.pageTitle , h2 {
+.pageTitle{
 	font-family: "Audiowide", Helvetica, sans-serif;
 	color:#EFEEFF;
 	text-align: center;
+}
+
+h2 {
+	font-family: "Audiowide", Helvetica, sans-serif;
+	color:#EFEEFF;
+	text-align: left;
+}
+
+p {
+	color:#EFEEFF;
+	font-family: "Comfortaa", Helvetica, sans-serif;
+	text-align: left;
 }
 
 body {
@@ -68,12 +80,17 @@ body {
 	padding-bottom: 10px;
 }
 
+iframe {
+	width: 100%;
+	height: 100%;
+}
 
-@media screen and (max-width: 720px) {
+
+@media screen and (max-width: 800px) {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: minmax(50px, 50px) repeat(2, 1fr);
+	grid-template-rows: 2;
 	}
 	
 	.sideBySideContent {
@@ -83,6 +100,10 @@ body {
     
     .menu {
         grid-column: span 12;
+    }
+    
+    h2, p {
+	    text-align: center;
     }
     
     .content {

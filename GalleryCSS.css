@@ -60,7 +60,7 @@ body {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: minmax(50px, 50px) repeat(2, 1fr);
+	grid-template-rows: 2;
 	}
     
     .menu {
