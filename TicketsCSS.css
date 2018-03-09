@@ -2,26 +2,30 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
 .linkBar > div > a , p {
-	color:#FFF;
+	color:#EFEEFF;
 	font-family: "Comfortaa", Helvetica, sans-serif;
 	text-align: center;
 }
 
+.linkBar > div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 .pageTitle , h2 {
 	font-family: "Audiowide", Helvetica, sans-serif;
-	color:#FFF;
+	color:#EFEEFF;
 	text-align: center;
 }
 
 body {
-	background-color:#000;
 	background-image: url("spacede.png");
 }
 
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: 50px 300px 300px;
+	grid-template-rows: 3;
 	padding: 2%;
 }
 
@@ -29,14 +33,14 @@ body {
 	grid-row: 1;
 	grid-column: span 12;
 	background-color:#999;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 .linkBar {
 	padding: 5px;
-	display: grid;
 	grid-gap: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 }
 
@@ -44,17 +48,22 @@ body {
 	grid-row: 2;
 	grid-column: span 12;
 	background-color:#666;
+	padding: 2%;
 }
 
 .footer {
 	grid-row: 3;
 	grid-column: span 12;
-	background-color:#333;
+	background-color:#494947;
 }
 
 #currentPage {
+	padding: 0px;
 	background-color: #494947;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
+
 
 @media screen and (max-width: 640px) {
 	
@@ -72,7 +81,7 @@ body {
     }
 	
 	.wrapper {
-		grid-template-rows: 100px 200px 200px;
+		grid-template-rows: 3;
 	}
 	
 }
