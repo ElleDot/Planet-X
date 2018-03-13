@@ -20,6 +20,7 @@
 
 body {
 	background-image: url("spacede.png");
+	min-width:640px;
 }
 
 p , a{
@@ -69,7 +70,6 @@ p , a{
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: left;
     width: 250px;
 }
 
@@ -91,10 +91,17 @@ div.desc {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2%;
-	padding: 2%;
+	padding: 3%;
+	margin: 2%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1275px) {
+	.sideBySideContent {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 960px) {
 	
 	.linkBar {
 	grid-template-columns: repeat(3, 1fr);
@@ -118,4 +125,3 @@ div.desc {
 	}
 	
 }
-
