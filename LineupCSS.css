@@ -60,7 +60,6 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2%;
 	padding: 2%;
-	display: inline-block;
 }
 
 .content {

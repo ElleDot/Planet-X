@@ -20,7 +20,6 @@
 
 body {
 	background-image: url("spacede.png");
-	min-width:640px;
 }
 
 p , a{
@@ -88,11 +87,11 @@ div.desc {
 }
 
 .sideBySideContent {
-	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2%;
 	padding: 3%;
 	margin: 2%;
+	display: grid;
 }
 
 @media screen and (max-width: 1275px) {
