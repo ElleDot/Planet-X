@@ -67,6 +67,7 @@ table {
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
+    font-family: "Comfortaa", Helvetica, sans-serif;
     padding: 8px;
     color: #EFEEFF;
 }
