@@ -68,10 +68,11 @@ td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
+    color: #EFEEFF;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
+tr:nth-child(odd) {
+    background-color: #494947;
 }
 
 .sideBySideContent {

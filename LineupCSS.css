@@ -30,6 +30,10 @@ p {
 	text-align: left;
 }
 
+.footer > p {
+	text-align: center;
+}
+
 body {
 	background-image: url("spacede.png");
 }
