@@ -68,10 +68,12 @@ img {
 	display: block;
 }
 
-script {
+#countDown {
 	font-family: "Audiowide", Helvetica, sans-serif;
 	color:#EFEEFF;
-	text-align: center; 
+	text-align: center;
+	font-size: x-large; 
+	margin: 2%;
 }
 
 @media screen and (max-width: 750px) {
