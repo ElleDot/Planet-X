@@ -61,6 +61,19 @@ body {
 	padding-bottom: 10px;
 }
 
+img {
+    max-width: 90%;
+    margin: auto;
+    padding: auto;
+	display: block;
+}
+
+.sideBySideContent {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 5%;
+	padding: 2%;
+}
 
 @media screen and (max-width: 750px) {
 	
@@ -83,6 +96,11 @@ body {
 	
 	.wrapper {
 		grid-template-rows: 3;
+	}
+	
+	.sideBySideContent {
+		grid-template-columns: repeat(1,1fr);
+		grid-template-rows: 2;
 	}
 	
 }
