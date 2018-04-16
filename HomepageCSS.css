@@ -68,6 +68,12 @@ img {
 	display: block;
 }
 
+script {
+	font-family: "Audiowide", Helvetica, sans-serif;
+	color:#EFEEFF;
+	text-align: center; 
+}
+
 @media screen and (max-width: 750px) {
 	
 	.linkBar {

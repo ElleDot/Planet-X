@@ -3,6 +3,8 @@
   <head>
     <title>Welcome to Planet X!</title>
 	<link rel="stylesheet" href="HomepageCSS.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="javascript.js"></script>
   </head>
   <body>
     <!--PUT PAGE LOGO AND INFO UP HERE-->
@@ -20,6 +22,17 @@
 		</div> <!--END OF MENU -->
         <div class="content">
 	        <img src="HomepageArt.png">
+	        <div id="countdown"></div>
+
+			<!-- this script must go after the div -->
+			<script type="text/javascript">
+			    $("#countdown")
+			    .countdown("2019/04/14", function(event) {
+			        $(this).text(
+			            event.strftime('%D days, %H hours, %M minutes, and %S seconds to go!')
+			        );
+			    });
+			</script>
         </div>
       <div class="footer">
 	      <p>Step into our launchpad and blast away to a music event that is truly out of this world!<br><br>Planet X is a different kind of school concert, featuring the talents of students of all years in a new kind of setting.<br><br>Join us and blast off to another world!</p>
