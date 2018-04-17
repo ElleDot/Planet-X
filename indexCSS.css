@@ -76,6 +76,16 @@ img {
 	margin: 2%;
 }
 
+.linkBarButton {
+	transition: transform 1s;
+}
+
+.linkBarButton:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
 @media screen and (max-width: 750px) {
 	
 	.linkBar {
