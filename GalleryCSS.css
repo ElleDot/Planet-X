@@ -97,6 +97,10 @@ div.desc {
     text-align: center;
 }
 
+.galleryLink {
+	padding: 0%;
+}
+
 .sideBySideContent {
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 2%;
